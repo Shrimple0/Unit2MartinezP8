@@ -15,6 +15,9 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     public float xRange = 20;
     public GameObject projectilePrefab;
+    public float zMin;
+    public float zMax;
+    public float verticalInput;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -33,5 +36,7 @@ public class PlayerController : MonoBehaviour
         }
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right *  horizontalInput * Time.deltaTime * speed);
+        verticalInput = Input.GetAxis("Vertical");
+        transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
     }
 }
