@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3cc123e61ffe34742a05bbbd93614256, type: 3}
+      propertyPath: m_TagString
+      value: Animal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -112,8 +116,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 4.348452, z: 1.4785366}
-  m_Center: {x: -0, y: 1.6742258, z: -0.2392683}
+  m_Size: {x: 1.5934199, y: 5.048063, z: 1.4785366}
+  m_Center: {x: 0.03243357, y: 1.4745436, z: -0.2392683}
 --- !u!54 &7410081789047941471
 Rigidbody:
   m_ObjectHideFlags: 0
